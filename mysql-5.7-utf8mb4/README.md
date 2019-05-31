@@ -4,10 +4,10 @@
 docker run -d \
     --name mysql \
     -p 3306:3306 \
-    -v ~/docker/mysql/data:/var/lib/mysql
+    -v ~/docker/mysql/data:/var/lib/mysql \
     -e MYSQL_ROOT_PASSWORD=123456 \
-    --innodb-buffer-pool-size=1G
-    mysql:5.7-utf8mb4\
+    --innodb-buffer-pool-size=1G \
+    mysql:5.7-utf8mb4
 ```
 
 ```yaml
