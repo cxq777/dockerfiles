@@ -1,4 +1,4 @@
-FROM cptactionhank/atlassian-confluence:6.13.1
+FROM cptactionhank/atlassian-confluence:7.0.3
 
 USER root
 

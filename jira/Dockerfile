@@ -1,4 +1,4 @@
-FROM cptactionhank/atlassian-jira-software:7.13.1
+FROM cptactionhank/atlassian-jira-software:8.1.0
 
 USER root
 
