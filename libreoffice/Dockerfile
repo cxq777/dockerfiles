@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 ENV TIMEZONE="Asia/Shanghai" \
     VERSION=5.4.5
 #install software
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk update && \
+RUN apk update && \
     apk add tzdata \
     libreoffice && \
 #Cleaning up
