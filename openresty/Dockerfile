@@ -8,4 +8,4 @@ RUN chmod +x entrypoint.sh \
 
 EXPOSE 80 443
 
-CMD ["/bin/bash", "entrypoint.sh"]
+CMD ["/bin/sh", "entrypoint.sh"]
