@@ -2,9 +2,13 @@ FROM openresty/openresty:alpine
 
 COPY entrypoint.sh entrypoint.sh
 
-RUN chmod +x entrypoint.sh \
-    && apk update \
-    && apk add inotify-tools
+RUN apk update \
+    && apk add --no-cache
+        tzdata
+        inotify-tools
+    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo "Asia/Shanghai" > /etc/timezone \
+    && chmod +x entrypoint.sh
 
 EXPOSE 80 443
 
