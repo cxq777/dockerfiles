@@ -5,7 +5,10 @@ ENV TIMEZONE="Asia/Shanghai" \
 #install software
 RUN apk update && \
     apk add tzdata \
-    libreoffice && \
+    libreoffice \
+    fontconfig \
+    ttf-dejavu && \
+    fc-cache --farce && \
 #Cleaning up
 #   apk del tzdata && \
     cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
