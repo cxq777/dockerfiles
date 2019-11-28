@@ -11,7 +11,7 @@ RUN apk --no-cache add curl \
 
 FROM alpine:latest
 
-COPY --from=downloader /usr/local/bin/docker /usr/local//bin/docker
+COPY --from=downloader /usr/local/bin/docker /usr/local/bin/docker
 
 ENTRYPOINT ["docker"]
 CMD ["-v"]
