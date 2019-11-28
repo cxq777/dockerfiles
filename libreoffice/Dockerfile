@@ -8,7 +8,7 @@ RUN apk update && \
     libreoffice \
     fontconfig \
     ttf-dejavu && \
-    fc-cache --farce && \
+    fc-cache --force && \
 #Cleaning up
 #   apk del tzdata && \
     cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
