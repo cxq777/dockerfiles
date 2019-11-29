@@ -1,4 +1,4 @@
-FROM cxq777/jdk:8
+FROM ringcentral/jdk:latest
 #set enviroments
 ENV TIMEZONE="Asia/Shanghai" \
     VERSION=5.4.5
