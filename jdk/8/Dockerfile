@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.8
 
 ENV JAVA_VERSION=8  \
     JAVA_UPDATE=171 \
