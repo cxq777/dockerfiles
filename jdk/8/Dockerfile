@@ -1,11 +1,11 @@
 FROM alpine:3.8
 
 ENV JAVA_VERSION=8  \
-    JAVA_UPDATE=171 \
+    JAVA_UPDATE=231 \
     JAVA_BUILD=11 \
     JAVA_HOME="/usr/lib/jvm/default-jvm" \
     LANG=C.UTF-8 \
-    GLIBC_VERSION=2.27-r0 \ 
+    GLIBC_VERSION=2.30-r0 \ 
     ORACLE_AUTHORIZATION_KEY=512cd62ec5174c3487ac17c61aaa89e8 
 
 RUN apk upgrade --update && \
