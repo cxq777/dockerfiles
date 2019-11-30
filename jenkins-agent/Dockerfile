@@ -3,9 +3,9 @@ FROM alpine:latest as downloader
 ARG DOCKER_CLI_VERSION="18.06.3-ce"
 ENV DOCKER_DOWNLOAD_URL="https://download.docker.com/linux/static/stable/x86_64/docker-$DOCKER_CLI_VERSION.tgz"
 
-# ARG KUBE_VERSION="1.15.1"
-# ENV KUBE_DOWNLOAD_URL="https://storage.googleapis.com/kubernetes-release/release/v$KUBE_VERSION/bin/linux/amd64/kubectl"
-ENV KUBE_DOWNLOAD_URL="https://storage.googleapis.com/kubernetes-release/release/$\(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt\)/bin/linux/amd64/kubectl"
+ARG KUBE_VERSION="1.16.3"
+ENV KUBE_DOWNLOAD_URL="https://storage.googleapis.com/kubernetes-release/release/v$KUBE_VERSION/bin/linux/amd64/kubectl"
+# ENV KUBE_DOWNLOAD_URL="https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 
 # install
 RUN apk --no-cache add curl \
