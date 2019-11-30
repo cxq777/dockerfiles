@@ -21,4 +21,4 @@ COPY --from=downloader /usr/local/bin/docker /usr/local/bin/docker
 COPY --from=downloader /usr/local/bin/kubectl /usr/local/bin/kubectl
 
 # ENTRYPOINT ["tini", "--"]
-CMD ["sh", "-c", "docker -v; kubectl -v;"]
+CMD ["sh", "-c", "docker -v; kubectl version;"]
