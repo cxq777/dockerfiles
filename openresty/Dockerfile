@@ -9,6 +9,7 @@ RUN apk update \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && chmod +x entrypoint.sh
+    && rm -rf /var/cache/apk/*
 
 EXPOSE 80 443
 
