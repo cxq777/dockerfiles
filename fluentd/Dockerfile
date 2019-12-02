@@ -11,5 +11,3 @@ RUN apk add --no-cache --update --virtual .build-deps \
     
 # Copy configuration files
 COPY ./conf/fluent.conf /fluentd/etc/
-
-USER fluent
