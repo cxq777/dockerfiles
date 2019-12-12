@@ -1,0 +1,15 @@
+role-strategy
+kubernetes
+kubernetes-credentials-provider
+kubernetes-cli
+configuration-as-code
+locale
+script-security
+workflow-aggregator
+git
+gitlab
+job-dsl
+extended-choice-parameter
+docker
+gitlab-oauth
+ssh-steps
