@@ -14,3 +14,4 @@ docker
 gitlab-oauth
 ssh-steps
 ws-cleanup
+blueocean
