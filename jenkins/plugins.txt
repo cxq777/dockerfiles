@@ -13,3 +13,4 @@ extended-choice-parameter
 docker
 gitlab-oauth
 ssh-steps
+ws-cleanup
