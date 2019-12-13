@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:lts-alpine
 
 ENV JENKINS_UC=https://mirrors.tuna.tsinghua.edu.cn/jenkins
 ENV JENKINS_UC_DOWNLOAD=$JENKINS_UC
