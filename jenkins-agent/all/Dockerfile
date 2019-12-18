@@ -26,6 +26,7 @@ FROM alpine:node:10-alpine
 
 COPY --from=downloader /usr/local/bin/docker /usr/local/bin/docker
 COPY --from=downloader /usr/local/bin/kubectl /usr/local/bin/kubectl
+COPY --from=downloader /usr/share/maven /usr/share/maven
 
 ENV MAVEN_HOME /usr/share/maven
 ENV LANG C.UTF-8
