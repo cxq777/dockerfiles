@@ -18,7 +18,7 @@ RUN apk --no-cache add curl \
     && mv docker/docker /usr/local/bin/docker \
     && curl -L $KUBE_DOWNLOAD_URL -o /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl \
-    && curl -L $MAVEN_DOWNLOAD_URL | tar -xz /usr/share/maven --strip-components=1
+    && curl -L $MAVEN_DOWNLOAD_URL | tar -xz -C /usr/share/maven --strip-components=1
 
 
 FROM alpine:node:10-alpine
