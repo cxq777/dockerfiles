@@ -22,7 +22,7 @@ RUN apk --no-cache add curl \
     && curl -L $MAVEN_DOWNLOAD_URL | tar -xz -C /usr/share/maven --strip-components=1
 
 
-FROM alpine:node:10-alpine
+FROM node:10-alpine
 
 COPY --from=downloader /usr/local/bin/docker /usr/local/bin/docker
 COPY --from=downloader /usr/local/bin/kubectl /usr/local/bin/kubectl
