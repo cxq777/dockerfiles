@@ -51,4 +51,4 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
 # ENTRYPOINT ["tini", "--"]
-CMD ["sh", "-c", "docker -v; kubectl version; java -version; mvn -version"]
+CMD ["sh", "-c", "docker -v; kubectl version; java -version; mvn -version; node -v; npm -v;"]
